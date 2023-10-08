@@ -1,9 +1,10 @@
 :root {
     --main-white: #FFFFFF;
     --second-gray: #C0C0C0;
-    --blue-button: #167BF7;
     --background-color: #00030C;
     --main-font: 'Inter',sans-serif;
+    --blue-button: #167BF7;
+    --blue-button-effect: #7fb8fd;
 }
 
 *{
@@ -95,4 +96,65 @@ body {
 
 .container__desc{
     padding: 2em;
+}
+
+.devices__list{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.devices{
+    text-align: center;
+}
+
+.devices__title{
+    font-size: 40px;
+    color: var(--main-white);
+}
+
+.list__item{
+    font-size: 28px;
+    color: var(--main-white);
+}
+
+.footer{
+    text-align: center;
+    margin: 15em 3em 0 3em;
+
+    
+}
+
+.footer__list{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.list__link a{
+    color: var(--main-white);
+    text-decoration: none;
+    margin-left: 1em;
+
+}
+
+.footer__text{
+    font-size: 14px;
+    color: var(--second-gray);
+    margin: 1em 0;
+}
+
+.list__link a:hover{
+    color: var(--blue-button);
+}
+
+.list__link a:active{
+    color: purple;
+}
+
+.container__button:hover{
+    background-color: var(--blue-button-effect);
+    color: #00030C;
 }
